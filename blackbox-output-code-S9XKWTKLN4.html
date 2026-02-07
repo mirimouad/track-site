@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Package Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Package Tracking</h1>
+        <form id="tracking-form">
+            <label for="tracking-number">Enter Tracking Number:</label>
+            <input type="text" id="tracking-number" placeholder="e.g., 123456789" required>
+            <button type="submit">Track Package</button>
+        </form>
+        <div id="results" class="hidden">
+            <h2>Tracking Details</h2>
+            <p id="status">Status: In Transit</p>
+            <p id="location">Location: Warehouse in New York</p>
+            <p id="eta">Estimated Delivery: Tomorrow</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
